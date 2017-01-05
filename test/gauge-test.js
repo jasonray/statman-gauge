@@ -7,12 +7,12 @@ var assert = require('assert');
 var should = require('should');
 
 describe('gauge', function () {
-    it('gauagename', function () {
+    it('gauge returns name', function () {
         var gauge = new Gauge('metric-name');
         gauge.name().should.equal('metric-name');
     });
 
-    it('initializesTo0', function () {
+    it('gauge value initializes to 0', function () {
         var gauge = new Gauge('metric-name');
         gauge.value().should.equal(0);
     });
