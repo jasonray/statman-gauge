@@ -14,7 +14,7 @@ describe('gauge', function () {
 
     it('initializesTo0', function () {
         var gauge = new Gauge('metric-name');
-        assert.equal(0, gauge.value());
+        gauge.value().should.equal(0);
     });
 
     it('increment', function () {
