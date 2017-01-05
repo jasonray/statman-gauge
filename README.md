@@ -1,6 +1,6 @@
 # statman-gauge [![Build Status](https://travis-ci.org/jasonray/statman-gauge.svg?branch=master)](https://travis-ci.org/jasonray/statman-gauge) [![on npm](http://img.shields.io/npm/v/statman-gauge.svg?style=flat)](https://www.npmjs.org/package/statman-gauge)
 
-`Statman-gauge` is one of the metrics from the [`statman`](https://github.com/jasonray/statman) library.  `Statman-gauge` is loosely based upon [codehale metric package](http://metrics.codahale.com/getting-started/#gauges), a gauge is an instanteous measurement metric.  This can be use to capture things like the size of a queue, number of messages processed, or some other interesting thing within your system.
+`statman-gauge` is one of the metrics from the [`statman`](https://github.com/jasonray/statman) library.  `statman-gauge` is loosely based upon [codehale metric package](http://metrics.codahale.com/getting-started/#gauges), a gauge is an instanteous measurement metric.  This can be use to capture things like the size of a queue, number of messages processed, or some other interesting thing within your system.
 
 **WARNING!!** if you look at the word `gauge` long enough, it looks misspelled 
 
