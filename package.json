@@ -11,18 +11,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jasonray/statman-gauge.git"
+    "url": "git+https://github.com/jasonray/statman-gauge.git"
   },
   "keywords": [
     "statman"
   ],
   "author": "jasonray",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jasonray/statman-gauge/issues"
   },
   "homepage": "https://github.com/jasonray/statman-gauge",
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "should": "^11.1.2"
+  },
   "dependencies": {
-    "mocha": "^3.2.0"
+    "lodash": "^4.17.4"
   }
 }
