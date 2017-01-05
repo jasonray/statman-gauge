@@ -17,10 +17,10 @@ describe('gauge', function () {
         gauge.value().should.equal(0);
     });
 
-    it('increment', function () {
+    it('gauge value increments from 0 to 1', function () {
         var gauge = new Gauge('metric-name');
         gauge.increment();
-        assert.equal(1, gauge.value());
+        gauge.value().should.equal(1);
     });
 
     it('incrementByValue', function () {
