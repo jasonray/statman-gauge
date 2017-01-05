@@ -142,4 +142,18 @@ describe('gauge', function () {
         assert.equal(9, gaugeB.value());
     });
 
+    describe('toString', function() {
+        it('with name', function () {
+            var gauge = new Gauge('metric-name');
+            gauge.set(5);
+            gauge.toString().should.equal('[metric-name: 5]');
+        });
+        it('without name', function () {
+            var gauge = new Gauge();
+            gauge.set(5);
+            gauge.toString().should.equal('[5]');
+        });
+
+    });
+
 });
