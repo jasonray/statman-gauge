@@ -1,6 +1,6 @@
 {
   "name": "statman-gauge",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "gauge control",
   "main": "lib/Gauge.js",
   "directories": {
@@ -27,6 +27,7 @@
     "should": "^11.1.2"
   },
   "dependencies": {
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "string-template": "^1.0.0"
   }
 }
