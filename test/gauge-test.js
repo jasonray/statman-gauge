@@ -42,10 +42,10 @@ describe('gauge', function () {
         assert.equal(-2, gauge.value());
     });
 
-    it('set', function () {
+    it('gauge can be set to specified value', function () {
         var gauge = new Gauge('metric-name');
         gauge.set(5);
-        assert.equal(5, gauge.value());
+        gauge.value().should.equal(5);
     });
 
     function testSetWithInvalidInput(test, input) {
