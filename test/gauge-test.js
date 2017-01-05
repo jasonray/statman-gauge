@@ -109,7 +109,7 @@ describe('gauge', function () {
         assert.equal(5, gauge.value());
     });
 
-    it('disallowNonFunctionForCustomValueFunction', function () {
+    it('gauge will not access a non-function for custom value', function () {
         assert.throws(function () {
             var gauge = new Gauge('metric-name', 5);
         });
