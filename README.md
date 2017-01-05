@@ -31,15 +31,40 @@ var gauge = statman.Gauge('gauge-name');
 
 # Use it!
 
+### Constructor
 + Gauge() => create instance of a gauge
 + Gauge(name) => create instance of a gauge with name
 + Gauge(name, f()) => create instance of a gauge with name, where f is a function that returns the value for the gauge
 
+### Increment
 + increment() => increment value by 1
 + increment(value) => increment by value
+```
+gauge.increment();  //increment by 1
+gauge.increment(10); //increment by 10
+```
+
+### Decrement
 + decrement() => decrement value by 1
 + decrement(value) => decrement by value
+```
+gauge.decrement();  //decrement by 1
+gauge.decrement(10); //decrement by 10
+```
+
+### Set
 + set(value) => set value of gauge
+```
+gauge.set(5);
+```
+
+### Value
++ value() => get the value of the gauge
+```
+gauge.value();
+```
+
+
 
 ## Example:
 Suppose that we want to create a gauage that measures that size of a queue.  The below indicates how to register this.
@@ -79,29 +104,6 @@ function enqueue(message) {
 function dequeue() {
 	data.pop(message);
 }
-```
-
-### Increment
-```
-gauge.increment();  //increment by 1
-gauge.increment(10); //increment by 10
-```
-
-### Decrement
-```
-gauge.decrement();  //decrement by 1
-gauge.decrement(10); //decrement by 10
-```
-
-### Set
-```
-gauge.set(5);
-```
-
-### Value
-To get gauge value:
-```
-gauge.value();
 ```
 
 # Build it!
