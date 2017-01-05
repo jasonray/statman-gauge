@@ -48,6 +48,36 @@ describe('gauge', function () {
         gauge.value().should.equal(5);
     });
 
+    it('gauge can be set then incremented', function () {
+        var gauge = new Gauge('metric-name');
+        gauge.set(5);
+        gauge.increment();
+        gauge.value().should.equal(6);
+    });
+
+    it('gauge can be set then decremented', function () {
+        var gauge = new Gauge('metric-name');
+        gauge.set(5);
+        gauge.decrement();
+        gauge.value().should.equal(4);
+    });
+
+    it('gauge can be incremented more than once', function () {
+        var gauge = new Gauge('metric-name');
+        gauge.set(5);
+        gauge.increment();
+        gauge.increment();
+        gauge.value().should.equal(7);
+    });
+
+    it('gauge can be decremented more than once', function () {
+        var gauge = new Gauge('metric-name');
+        gauge.set(5);
+        gauge.decrement();
+        gauge.decrement();
+        gauge.value().should.equal(3);
+    });
+
     function testSetWithInvalidInput(test, input) {
         var gauge = new Gauge('metric-name');
         assert.throws(function () {
