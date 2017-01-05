@@ -23,11 +23,11 @@ describe('gauge', function () {
         gauge.value().should.equal(1);
     });
 
-    it('incrementByValue', function () {
+    it('gauge increments by specified value', function () {
         var gauge = new Gauge('metric-name');
         gauge.set(10);
         gauge.increment(2);
-        assert.equal(12, gauge.value());
+        gauge.value().should.equal(12);
     });
 
     it('decrement', function () {
