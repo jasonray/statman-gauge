@@ -7,6 +7,16 @@ var assert = require('assert');
 var should = require('should');
 
 describe('gauge', function () {
+    it('explicit construct', function () {
+        var gauge = new Gauge('metric-name');
+         should.exist(gauge);
+    });
+
+    it('implicit construct', function () {
+        var gauge = Gauge('metric-name');
+        should.exist(gauge);
+    });
+
     it('gauge returns name', function () {
         var gauge = new Gauge('metric-name');
         gauge.name().should.equal('metric-name');
