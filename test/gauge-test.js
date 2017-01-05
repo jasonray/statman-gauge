@@ -85,17 +85,17 @@ describe('gauge', function () {
         }, Error, "`set` should throw exception if passed non-numeric value");
     }
 
-    it('setNotAllowString', function () {
+    it('unable to set to string', function () {
         var input = "str";
         testSetWithInvalidInput(input);
     });
 
-    it('setNotAllowNull', function () {
+    it('unable to set to null', function () {
         var input = null;
         testSetWithInvalidInput(input);
     });
 
-    it('setNotAllowUninitialized', function () {
+    it('unable to set to undefined', function () {
         var input;
         testSetWithInvalidInput(input);
     });
