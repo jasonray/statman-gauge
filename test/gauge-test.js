@@ -4,11 +4,12 @@
 var Gauge = require('../lib/Gauge');
 var mocha = require('mocha');
 var assert = require('assert');
+var should = require('should');
 
 describe('gauge', function () {
     it('gauagename', function () {
         var gauge = new Gauge('metric-name');
-        assert.equal('metric-name', gauge.name());
+        gauge.name().should.equal('metric-name');
     });
 
     it('initializesTo0', function () {
