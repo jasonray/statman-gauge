@@ -30,10 +30,10 @@ describe('gauge', function () {
         gauge.value().should.equal(12);
     });
 
-    it('decrement', function () {
+    it('gauge value decrements from 0 to -1', function () {
         var gauge = new Gauge('metric-name');
         gauge.decrement();
-        assert.equal(-1, gauge.value());
+        gauge.value().should.equal(-1);
     });
 
     it('decrementByValue', function () {
