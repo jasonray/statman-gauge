@@ -115,7 +115,7 @@ describe('gauge', function () {
         });
     });
 
-    it('twoGauage', function () {
+    it('with two gauges, values are independent', function () {
         var gaugeA = new Gauge('metric-name');
         gaugeA.set(5);
         gaugeA.increment();
