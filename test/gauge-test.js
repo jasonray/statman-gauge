@@ -94,12 +94,12 @@ describe('gauge', function () {
         var input = null;
         testSetWithInvalidInput(input);
     });
-    //
-    // it('setNotAllowUninitialized', function () {
-    //     var input;
-    //     testSetWithInvalidInput(input);
-    // });
-    //
+
+    it('setNotAllowUninitialized', function () {
+        var input;
+        testSetWithInvalidInput(input);
+    });
+
     // it('allowCustomValueFunction', function () {
     //     var customValueFunction = function () {
     //         return 5;
