@@ -90,10 +90,10 @@ describe('gauge', function () {
         testSetWithInvalidInput(input);
     });
 
-    // it('setNotAllowNull', function () {
-    //     var input = null;
-    //     testSetWithInvalidInput(input);
-    // });
+    it('setNotAllowNull', function () {
+        var input = null;
+        testSetWithInvalidInput(input);
+    });
     //
     // it('setNotAllowUninitialized', function () {
     //     var input;
