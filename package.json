@@ -27,6 +27,6 @@
     "should": "^11.1.2"
   },
   "dependencies": {
-    "underscore": "^1.8.3"
+    "lodash": "^4.17.4"
   }
 }
