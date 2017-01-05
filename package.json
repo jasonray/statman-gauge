@@ -11,13 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jasonray/statman-gauge.git"
+    "url": "git+https://github.com/jasonray/statman-gauge.git"
   },
   "keywords": [
     "statman"
   ],
   "author": "jasonray",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jasonray/statman-gauge/issues"
   },
