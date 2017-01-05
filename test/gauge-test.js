@@ -100,14 +100,14 @@ describe('gauge', function () {
         testSetWithInvalidInput(input);
     });
 
-    // it('allowCustomValueFunction', function () {
-    //     var customValueFunction = function () {
-    //         return 5;
-    //     }
-    //
-    //     var gauge = new Gauge('metric-name', customValueFunction);
-    //     assert.equal(5, gauge.value());
-    // });
+    it('gauge can utilize a custom function to represent value', function () {
+        var customValueFunction = function () {
+            return 5;
+        };
+
+        var gauge = new Gauge('metric-name', customValueFunction);
+        assert.equal(5, gauge.value());
+    });
 
     it('disallowNonFunctionForCustomValueFunction', function () {
         assert.throws(function () {
