@@ -24,7 +24,7 @@
   "homepage": "https://github.com/jasonray/statman-gauge",
   "devDependencies": {
     "mocha": "^6.0.2",
-    "should": "^11.1.2"
+    "should": "^13.2.3"
   },
   "dependencies": {
     "lodash": "^4.17.4",
