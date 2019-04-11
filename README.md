@@ -4,8 +4,8 @@
 
 **WARNING!!** if you look at the word `gauge` long enough, it looks misspelled 
 
-# Install it!
-## Option 1: access directly
+## Install it!
+### Option 1: access directly
 Install using npm:
 ```
 npm install statman-gauge
@@ -17,7 +17,7 @@ var Gauge = require('statman-gauge');
 var gauge = Gauge('gauge-name');
 ```
 
-## Option 2: access from `statman`
+### Option 2: access from `statman`
 Install using npm:
 ```
 npm install statman
@@ -29,7 +29,7 @@ var statman = require('statman');
 var gauge = statman.Gauge('gauge-name');
 ```
 
-# Use it!
+## Use it!
 ### Constructor
 + Gauge() => create instance of a gauge
 + Gauge(name) => create instance of a gauge with name
@@ -63,9 +63,7 @@ gauge.set(5);
 gauge.value();
 ```
 
-
-
-## Example:
+### Example:
 Suppose that we want to create a gauage that measures that size of a queue.  The below indicates how to register this.
 
 #### Method 1 (use gauge directly)
@@ -105,7 +103,7 @@ function dequeue() {
 }
 ```
 
-# Build it!
+## Build it!
 - Make sure that you have `node` and `npm` installed
 - Clone source code to you local machine
 - Setup dependencies: `npm install`
