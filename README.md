@@ -4,32 +4,32 @@
 
 **WARNING!!** if you look at the word `gauge` long enough, it looks misspelled 
 
-# Install it!
-## Option 1: access directly
+## Install it!
+### Option 1: access directly
 Install using npm:
-```
+``` bash
 npm install statman-gauge
 ```
 
 Reference in your app:
-```
+``` javascript
 var Gauge = require('statman-gauge');
 var gauge = Gauge('gauge-name');
 ```
 
-## Option 2: access from `statman`
+### Option 2: access from `statman`
 Install using npm:
-```
+``` bash
 npm install statman
 ```
 
 Reference in your app:
-```
+``` javascript
 var statman = require('statman');
 var gauge = statman.Gauge('gauge-name');
 ```
 
-# Use it!
+## Use it!
 ### Constructor
 + Gauge() => create instance of a gauge
 + Gauge(name) => create instance of a gauge with name
@@ -38,7 +38,7 @@ var gauge = statman.Gauge('gauge-name');
 ### Increment
 + increment() => increment value by 1
 + increment(value) => increment by value
-```
+``` javascript
 gauge.increment();  //increment by 1
 gauge.increment(10); //increment by 10
 ```
@@ -46,30 +46,28 @@ gauge.increment(10); //increment by 10
 ### Decrement
 + decrement() => decrement value by 1
 + decrement(value) => decrement by value
-```
+``` javascript
 gauge.decrement();  //decrement by 1
 gauge.decrement(10); //decrement by 10
 ```
 
 ### Set
 + set(value) => set value of gauge
-```
+``` javascript
 gauge.set(5);
 ```
 
 ### Value
 + value() => get the value of the gauge
-```
+``` javascript
 gauge.value();
 ```
 
-
-
-## Example:
+### Example:
 Suppose that we want to create a gauage that measures that size of a queue.  The below indicates how to register this.
 
 #### Method 1 (use gauge directly)
-```
+``` javascript
 var Gauge = require('statman-gauge');
 var gauge = Gauge('queueSize');
 
@@ -90,7 +88,7 @@ TODO
 ```
 
 #### Method 3 (use custom value function)
-```
+``` javascript
 var Gauge = require('statman-gauge');
 var gauge = Gauge('queueSize', function() {
 	return data.size();
@@ -105,7 +103,7 @@ function dequeue() {
 }
 ```
 
-# Build it!
+## Build it!
 - Make sure that you have `node` and `npm` installed
 - Clone source code to you local machine
 - Setup dependencies: `npm install`
