@@ -23,11 +23,11 @@
   },
   "homepage": "https://github.com/jasonray/statman-gauge",
   "devDependencies": {
-    "mocha": "^6.1.0",
+    "mocha": "^6.2.1",
     "should": "^13.2.3"
   },
   "dependencies": {
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.15",
     "string-template": "^1.0.0"
   }
 }
