@@ -1,6 +1,6 @@
 {
   "name": "statman-gauge",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "statman-gauge is one of the metrics from the statman library. Loosely based upon codehale metric package, a gauge is an instantaneous measurement metric",
   "main": "lib/Gauge.js",
   "directories": {
