@@ -64,7 +64,7 @@ gauge.value();
 ```
 
 ### Example:
-Suppose that we want to create a gauage that measures that size of a queue.  The below indicates how to register this.
+Suppose that we want to create a gauge that measures that size of a queue.  The below indicates how to register this.
 
 #### Method 1 (use gauge directly)
 ``` javascript
